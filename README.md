@@ -1,6 +1,6 @@
 # Model predictive control for steering a car
 Model_Predictive_Control_for-Car_Steering
-
+---
 Writeup file involves my reflections on certain aspects of this work  
 To compile this project, read below!!
 ---
