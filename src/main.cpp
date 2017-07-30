@@ -160,7 +160,7 @@ if (sdata.size() > 2 && sdata[0] == '4' && sdata[1] == '2') {
 
 		   // writing predicted trajectory from the last optimization run
 		   for(unsigned int k = 2; k < vars.size(); ++k){
-			  mpc_x_vals.push_back(5.0 +vars[k]) ;	// plot 5 meter ahead
+			  mpc_x_vals.push_back(1.0 +vars[k]) ;	// plot 1 meter ahead
 			  mpc_y_vals.push_back(vars[k + mpc.N]);
 			 }
 		   //Display the waypoints/reference line, use the same points obtained from simulator
@@ -168,7 +168,7 @@ if (sdata.size() > 2 && sdata[0] == '4' && sdata[1] == '2') {
 		   vector<double> next_y_vals ;
 
 		   for (unsigned int i = 0 ; i< ptsx_c.size();++i){
-		     next_x_vals.push_back( 0+ ptsx_c[i]);   //5 meters head plot
+		     next_x_vals.push_back( 0+ ptsx_c[i]);   //0 meters head plot
 		     next_y_vals.push_back(ptsy_c[i]);
 		   }
 		   json msgJson;  // put all outputs in this message
